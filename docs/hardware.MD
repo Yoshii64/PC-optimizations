@@ -21,3 +21,5 @@ try to go for a Wifi card that has the same "generation" as your router. if one 
 if you must use an external card (like through a USB port) make sure it is facing the router's general direction
 
 ensure you have a drive that is not corrupted. you can use Crystal Disk Info [(Software/CDL)](https://github.com/Yoshii64/PC-tuning-/tree/main/software/CDL)
+
+now onto [Windows installation](https://github.com/Yoshii64/PC-tuning-/blob/main/docs/setup.md)

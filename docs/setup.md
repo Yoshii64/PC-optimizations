@@ -1,4 +1,4 @@
-# skip this if youre planning to keep using an old installation and just optimize there
+## skip this if youre planning to keep using an old installation and just optimize there
 
 now to getting the ISO. we will look at Windows 10 and 11 for this.
 

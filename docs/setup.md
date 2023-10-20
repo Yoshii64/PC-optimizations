@@ -14,4 +14,4 @@ usually can get into a temporary boot menu by mashing F12.
 
 now you should be in Windows installation.
 
-for reigon choose "English (World)" this will cut out some of the bloatware in Windows. go through everything as normal until OOBE
+for region choose "English (World)" this will cut out some of the bloatware in Windows. go through everything as normal until OOBE

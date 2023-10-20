@@ -15,3 +15,7 @@ usually can get into a temporary boot menu by mashing F12.
 now you should be in Windows installation.
 
 for region choose "English (World)" this will cut out some of the bloatware in Windows. go through everything as normal until OOBE
+
+now to Windows 11. go to [here](https://www.microsoft.com/software-download/windows11) and go to "Select the product language"
+if that dosent appear go to "Download Windows 11 Disk Image (ISO) for x64 devices" and choose the only option. should direct you.
+choose your language and it should bring you to "Download - Windows 11 [language]" and click "64-bit Download" and it should download.

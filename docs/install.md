@@ -1,6 +1,6 @@
 ### skip this if youre planning to keep using an old installation and just optimize there
 
-now to OOBE. go through region and language as normal. if you have the option choose "I dont have a netowkr" or similar
+now to OOBE. go through region and language as normal. if you have the option choose "I dont have a network" or similar
 if you cant skip that, just go on a netowrk
 
 if you get the option whether to use it for home or work, set it to work

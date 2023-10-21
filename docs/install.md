@@ -16,3 +16,7 @@ if you dont feel like going through the "We're getting everything ready for you"
 dont do this on a VM. it will sign you out on your host.
 
 make sure to update before doing any more optimizations as updates will revert some opimizations.
+
+### only for VMs
+
+well. VirtualBox. but if you want to install the guest additions CD, do so now. during the install choices, turn off start menu entries.

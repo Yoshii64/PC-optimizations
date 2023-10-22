@@ -41,6 +41,9 @@ in "Select which buttons to show on the toolbar:" turn everything except downloa
 
 ## What browser should I get?
 [Thorium](https://github.com/Alex313031/Thorium-Win/releases) if you want the best performance out of a browser. 
-security is better on Thorium than Chrome or even Brave. however [Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/) is heavily recommended for security and privacy
-if you want silly but good features, use OperaGX. (may change this)
+
+[Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/) is heavily recommended for security and privacy. 
+
+If you want silly but good features, use [OperaGX](https://www.opera.com/computer/thanks?ni=eapgx&os=windows). (may change this)
+
 the browsers you should change *from* would be Chrome (not bad but there's better) Edge (privacy concerns) and any older browser

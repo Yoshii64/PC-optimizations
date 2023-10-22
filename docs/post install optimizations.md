@@ -47,3 +47,18 @@ in "Select which buttons to show on the toolbar:" turn everything except downloa
 If you want silly but good features, use [OperaGX](https://www.opera.com/computer/thanks?ni=eapgx&os=windows). (may change this)
 
 the browsers you should change *from* would be Chrome (not bad but there's better) Edge (privacy concerns) and any older browser
+
+
+## quick optimizations
+Go into Task Manager then "more options" and go to the startup tab. turn all unused startup items off
+
+then type in "edit" and click on "edit power plan"
+go back to "power options" and if you're on a PC, change it to high performance. if on a laptop, make sure you're on balanced.
+
+## command prompt and registry
+getting into the real stuff!
+
+`DISM /Online /Cleanup-Image /StartComponentCleanup /ResetBase` to clean the WinSxS folder
+
+### service disabling
+`sc config "SysMain" start= disabled` to disable Prefetch if not on an HDD

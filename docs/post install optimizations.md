@@ -62,3 +62,6 @@ getting into the real stuff!
 
 ### service disabling
 `sc config "SysMain" start= disabled` to disable Prefetch if not on an HDD
+***for telemetry***
+`sc config "diagnosticshub.standardcollector.service" start= disabled` 
+`sc config "DiagTrack" start= disabled`

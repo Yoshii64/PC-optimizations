@@ -38,3 +38,9 @@ in "Select which buttons to show on the toolbar:" turn everything except downloa
 * Improve your PC gaming experience with efficiency mode - on
 * Save resources with sleeping tabs/Fade sleeping tabs - on
 * Performance detector - off
+
+## What browser should I get?
+[Thorium](https://github.com/Alex313031/Thorium-Win/releases) if you want the best performance out of a browser. 
+security is better on Thorium than Chrome or even Brave. however [Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/) is heavily recommended for security and privacy
+if you want silly but good features, use OperaGX. (may change this)
+the browsers you should change *from* would be Chrome (not bad but there's better) Edge (privacy concerns) and any older browser

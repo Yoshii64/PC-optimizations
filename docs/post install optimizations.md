@@ -72,6 +72,9 @@ this may remove compatibility with certain less used things. however shouldn't b
 ### remove telemetry 
 
 we are going to disable more telemetry to save resources and increase privacy
+
+open CMD as admin if you havent already ad enter the following commands in
+
 `setx DOTNET_CLI_TELEMETRY_OPTOUT 1` to disable .NET telemetry
 
 `setx POWERSHELL_TELEMETRY_OPTOUT 1` to disable Powershell telemetry

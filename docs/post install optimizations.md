@@ -130,6 +130,8 @@ if you dual boot use `bcdedit /set bootmenupolicy Legacy` this brings back the L
 
 if you only have one Windows installation use `bcdedit /timeout 0`
 
+`bcdedit /set quietboot yes >nul` to disable the 'Boot circle' (loading icon lol)
+
 `Reg add "HKCU\Control Panel\Desktop" /v "WaitToKillAppTimeout" /t REG_SZ /d "2000" /f >nul`
 
 `Reg add "HKLM\System\CurrentControlSet\Control" /v "WaitToKillServiceTimeout" /t REG_SZ /d "2000" /f >nul`

@@ -135,3 +135,15 @@ if you only have one Windows installation use `bcdedit /timeout 0`
 `Reg add "HKLM\System\CurrentControlSet\Control" /v "WaitToKillServiceTimeout" /t REG_SZ /d "2000" /f >nul`
 
 `Reg add "HKCU\Control Panel\Desktop" /v "AutoEndTasks" /t REG_SZ /d "1" /f >nul` kill things faster on shutdown
+
+### security
+
+let's do security specific regedits and optimizations now
+
+`net user defaultuser0 /delete >nul 2>&1` delete defaultuser0. used in OOBE and can cause certain attacks
+
+we already disabled Lanman/SMB 1.0 to mitigate Wannacry. However if it gets enabled again, we can harden it a bit
+
+`Reg add "HKLM\System\CurrentControlSet\Services\LanManServer\Parameters" /v "RestrictNullSessAccess" /t REG_DWORD /d "1" /f >nul`
+
+`Reg add "HKLM\System\CurrentControlSet\Services\LanManServer\Parameters" /v "DisableCompression" /t REG_DWORD /d "1" /f >nul`

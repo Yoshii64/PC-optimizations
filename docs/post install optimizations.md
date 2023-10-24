@@ -79,6 +79,12 @@ open CMD as admin if you havent already ad enter the following commands in
 
 `setx POWERSHELL_TELEMETRY_OPTOUT 1` to disable Powershell telemetry
 
+`wevtutil set-log "Microsoft-Windows-SleepStudy/Diagnostic" /e:false`
+
+`wevtutil set-log "Microsoft-Windows-Kernel-Processor-Power/Diagnostic" /e:false`
+
+`wevtutil set-log "Microsoft-Windows-UserModePowerService/Diagnostic" /e:false` disable Sleep Study
+
 `REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t "REG_DWORD" /d "0" /f`
 
 `REG ADD "HKCU\SOFTWARE\Microsoft\Input\TIPC" /v "Enabled" /t REG_DWORD /d "0" /f`

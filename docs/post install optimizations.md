@@ -64,3 +64,7 @@ getting into the real stuff!
 
 ### service disabling
 run [docs/code/services.bat](https://github.com/Yoshii64/PC-tuning/blob/main/docs/code/services.bat)
+
+### appx stuff
+To remove AppX programs we couldn't delete earlier we will [run docs/code/appx.bat](https://github.com/Yoshii64/PC-tuning/blob/main/docs/code/appx.bat)
+this may remove compatibility with certain less used things. however shouldn't break anything serious

@@ -68,3 +68,15 @@ run [docs/code/services.bat](https://github.com/Yoshii64/PC-tuning/blob/main/doc
 ### appx stuff
 To remove AppX programs we couldn't delete earlier we will [run docs/code/appx.bat](https://github.com/Yoshii64/PC-tuning/blob/main/docs/code/appx.bat)
 this may remove compatibility with certain less used things. however shouldn't break anything serious
+
+### remove telemetry 
+
+we are going to disable more telemetry to save resources and increase privacy
+`setx DOTNET_CLI_TELEMETRY_OPTOUT 1` to disable .NET telemetry
+`setx POWERSHELL_TELEMETRY_OPTOUT 1` to disable Powershell telemetry
+
+`REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t "REG_DWORD" /d "0" /f
+REG ADD "HKCU\SOFTWARE\Microsoft\Input\TIPC" /v "Enabled" /t REG_DWORD /d "0" /f
+REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Start_TrackProgs" /t REG_DWORD /d "0" /f
+REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "PublishUserActivities" /t REG_DWORD /d "0" /f` could be placebo
+then run [docs/code/telemetry.bat](https://github.com/Yoshii64/PC-tuning/blob/main/docs/code/telemetry.bat)

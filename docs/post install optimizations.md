@@ -60,6 +60,8 @@ getting into the real stuff!
 
 `DISM /Online /Cleanup-Image /StartComponentCleanup /ResetBase` to clean the WinSxS folder
 
+`powershell Disable-MMAgent` to disable memory compression
+
 ### service disabling
 `sc config "SysMain" start= disabled` to disable Prefetch if not on an HDD
 

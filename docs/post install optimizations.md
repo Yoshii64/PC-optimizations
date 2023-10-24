@@ -93,6 +93,9 @@ open CMD as admin if you havent already ad enter the following commands in
 
 `REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "PublishUserActivities" /t REG_DWORD /d "0" /f` could be placebo
 
+`REG ADD "HKLM\Software\Policies\Microsoft\Windows\AppCompat" /v "DisableInventory" /t REG_DWORD /d "1" /f >nul` disables Inventory
+which sends device/driver info to Microsoft
+
 then run [docs/code/telemetry.bat](https://github.com/Yoshii64/PC-tuning/blob/main/docs/code/telemetry.bat)
 
 ### remove certain components
@@ -116,3 +119,19 @@ here, we will remove legacy or unused components that waste space and bring in a
 `DISM /Online /Remove-Capability /CapabilityName:"App.StepsRecorder~~~~0.0.1.0" /NoRestart`
 
 `DISM /Online /Remove-Capability /CapabilityName:"App.Support.QuickAssist~~~~0.0.1.0" /NoRestart` just useless
+
+### fast startup and shutdown
+
+we've already improved boot times a tiny bit. however let's do more optimizations specifically for boot times
+
+`bcdedit /set bootuxdisabled On` disables the boot logo. if you like the boot logo use `bcdedit /set bootux standard`
+
+if you dual boot use `bcdedit /set bootmenupolicy Legacy` this brings back the Legacy bootloader
+
+if you only have one Windows installation use `bcdedit /timeout 0`
+
+`Reg add "HKCU\Control Panel\Desktop" /v "WaitToKillAppTimeout" /t REG_SZ /d "2000" /f >nul`
+
+`Reg add "HKLM\System\CurrentControlSet\Control" /v "WaitToKillServiceTimeout" /t REG_SZ /d "2000" /f >nul`
+
+`Reg add "HKCU\Control Panel\Desktop" /v "AutoEndTasks" /t REG_SZ /d "1" /f >nul` kill things faster on shutdown

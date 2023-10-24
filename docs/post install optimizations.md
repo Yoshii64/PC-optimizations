@@ -79,4 +79,5 @@ we are going to disable more telemetry to save resources and increase privacy
 REG ADD "HKCU\SOFTWARE\Microsoft\Input\TIPC" /v "Enabled" /t REG_DWORD /d "0" /f
 REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Start_TrackProgs" /t REG_DWORD /d "0" /f
 REG ADD "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /v "PublishUserActivities" /t REG_DWORD /d "0" /f` could be placebo
+
 then run [docs/code/telemetry.bat](https://github.com/Yoshii64/PC-tuning/blob/main/docs/code/telemetry.bat)

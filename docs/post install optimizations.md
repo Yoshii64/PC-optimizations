@@ -149,3 +149,9 @@ we already disabled Lanman/SMB 1.0 to mitigate Wannacry. However if it gets enab
 `Reg add "HKLM\System\CurrentControlSet\Services\LanManServer\Parameters" /v "RestrictNullSessAccess" /t REG_DWORD /d "1" /f >nul`
 
 `Reg add "HKLM\System\CurrentControlSet\Services\LanManServer\Parameters" /v "DisableCompression" /t REG_DWORD /d "1" /f >nul`
+
+we are now going to restrict .rdp files (a file for remote execution)
+
+`reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v AllowUnsignedFiles /t REG_DWORD /d "0" /f`
+
+`reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v AllowSignedFiles /t REG_DWORD /d "0" /f`

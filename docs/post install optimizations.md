@@ -155,3 +155,7 @@ we are now going to restrict .rdp files (a file for remote execution)
 `reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v AllowUnsignedFiles /t REG_DWORD /d "0" /f`
 
 `reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" /v AllowSignedFiles /t REG_DWORD /d "0" /f`
+
+mitigate CVE-2022-30190
+
+`reg delete HKEY_CLASSES_ROOT\ms-msdt /f`

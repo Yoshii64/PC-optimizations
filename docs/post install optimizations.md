@@ -159,3 +159,11 @@ we are now going to restrict .rdp files (a file for remote execution)
 mitigate CVE-2022-30190
 
 `reg delete HKEY_CLASSES_ROOT\ms-msdt /f`
+
+make sure CFG is enabled
+
+`Reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "EnableCfg" /t Reg_DWORD /d "1" /f`
+
+same for ASLR
+
+`Reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "MoveImages" /t Reg_DWORD /d "1" /f`

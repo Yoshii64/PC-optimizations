@@ -167,3 +167,5 @@ make sure CFG is enabled
 same for ASLR
 
 `Reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "MoveImages" /t Reg_DWORD /d "1" /f`
+
+run [docs/code/MSOffice Mitigations.bat](https://github.com/Yoshii64/PC-optimizations/blob/main/docs/code/MSOffice%20Mitigations.bat) to mitigate Microsoft Office

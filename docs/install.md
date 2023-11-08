@@ -19,4 +19,6 @@ make sure to update before doing any more optimizations as updates will revert s
 
 ### only for VMs
 
+now go to [docs/post install optimizations.md](https://github.com/Yoshii64/PC-optimizations/blob/main/docs/post%20install%20optimizations.md)
+
 well. VirtualBox. but if you want to install the guest additions CD, do so now. during the install choices, turn off start menu entries.

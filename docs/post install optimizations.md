@@ -169,3 +169,24 @@ same for ASLR
 `Reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v "MoveImages" /t Reg_DWORD /d "1" /f`
 
 run [docs/code/MSOffice Mitigations.bat](https://github.com/Yoshii64/PC-optimizations/blob/main/docs/code/MSOffice%20Mitigations.bat) to mitigate Microsoft Office
+
+`reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient" /v "EnableMulticast" /t Reg_DWORD /d "0" /f` 
+
+which disables LLMNR. very insecure and old. replaced by DNS anyways
+
+### QoL stuff
+
+BSOD stuff first.
+
+`reg add "HKLM\System\CurrentControlSet\Control\CrashControl" /v "DisplayParameters" /t REG_DWORD /d "1" /f
+` more information in the BSOD errors
+
+`reg add "HKLM\System\CurrentControlSet\Control\CrashControl" /v "CrashDumpEnabled" /t REG_DWORD /d "0" /f
+` dont create crash dumps. no one reads those anyways
+
+Windows sometimes shows sound devices that are not plugged in. 
+
+`reg add "HKCU\SOFTWARE\Microsoft\Multimedia\Audio\DeviceCpl" /v "ShowHiddenDevices" /t REG_DWORD /d "0" /f >nul 2>&1`
+
+`reg add "HKCU\SOFTWARE\Microsoft\Multimedia\Audio\DeviceCpl" /v "ShowDisconnectedDevices" /t REG_DWORD /d "0" /f >nul 2>&1
+` to disable unconnected audio devices showing up anywhere

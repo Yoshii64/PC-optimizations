@@ -96,6 +96,10 @@ open CMD as admin if you havent already ad enter the following commands in
 `REG ADD "HKLM\Software\Policies\Microsoft\Windows\AppCompat" /v "DisableInventory" /t REG_DWORD /d "1" /f >nul` disables Inventory
 which sends device/driver info to Microsoft
 
+`reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\CurrentVersion\Software Protection Platform" /v "NoGenTicket" /t REG_DWORD /d "1" /f` disables KMS Client/activiation telemetry
+
+`reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\SearchSettings" /v "IsDeviceSearchHistoryEnabled" /t REG_DWORD /d "0" /f` disables search history in Windows Search
+
 then run [docs/code/telemetry.bat](https://github.com/Yoshii64/PC-tuning/blob/main/docs/code/telemetry.bat)
 
 ### remove certain components
@@ -190,3 +194,5 @@ Windows sometimes shows sound devices that are not plugged in.
 
 `reg add "HKCU\SOFTWARE\Microsoft\Multimedia\Audio\DeviceCpl" /v "ShowDisconnectedDevices" /t REG_DWORD /d "0" /f >nul 2>&1
 ` to disable unconnected audio devices showing up anywhere
+
+`reg delete "HKEY_CLASSES_ROOT\*\shellex\ContextMenuHandlers\ModernSharing" /f >nul 2>nul` delete "Share" in the context menu

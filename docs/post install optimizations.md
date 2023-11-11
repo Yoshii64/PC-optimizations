@@ -178,6 +178,10 @@ run [docs/code/MSOffice Mitigations.bat](https://github.com/Yoshii64/PC-optimiza
 
 which disables LLMNR. very insecure and old. replaced by DNS anyways
 
+`Reg add "HKLM\Software\Microsoft\.NetFramework\v4.0.30319" /v "SchUseStrongCrypto" /t REG_DWORD /d "1" /f >nul` use stronger cryptogrophy in 64 bit
+
+`Reg add "HKLM\Software\WOW6432Node\Microsoft\.NETFramework\v4.0.30319" /v "SchUseStrongCrypto" /t REG_DWORD /d "1" /f >nul`  use stronger cryptogrophy in 32 bit
+
 ### QoL stuff
 
 BSOD stuff first.

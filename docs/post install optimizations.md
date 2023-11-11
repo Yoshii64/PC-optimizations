@@ -186,7 +186,7 @@ BSOD stuff first.
 ` more information in the BSOD errors
 
 `reg add "HKLM\System\CurrentControlSet\Control\CrashControl" /v "CrashDumpEnabled" /t REG_DWORD /d "0" /f
-` dont create crash dumps. no one reads those anyways
+` dont create crash dumps. no one reads those anyways. However some IT specialists can figure out something by a dump
 
 Windows sometimes shows sound devices that are not plugged in. 
 

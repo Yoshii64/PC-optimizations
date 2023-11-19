@@ -73,7 +73,7 @@ this may remove compatibility with certain less used things. however shouldn't b
 
 we are going to disable more telemetry to save resources and increase privacy
 
-open CMD as admin if you havent already ad enter the following commands in
+open CMD as admin if you havent already. enter the following commands in
 
 `setx DOTNET_CLI_TELEMETRY_OPTOUT 1` to disable .NET telemetry
 
@@ -181,6 +181,8 @@ which disables LLMNR. very insecure and old. replaced by DNS anyways
 `Reg add "HKLM\Software\Microsoft\.NetFramework\v4.0.30319" /v "SchUseStrongCrypto" /t REG_DWORD /d "1" /f >nul` use stronger cryptogrophy in 64 bit
 
 `Reg add "HKLM\Software\WOW6432Node\Microsoft\.NETFramework\v4.0.30319" /v "SchUseStrongCrypto" /t REG_DWORD /d "1" /f >nul`  use stronger cryptogrophy in 32 bit
+
+`Reg add "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" /v "RestrictAnonymousSAM" /t Reg_DWORD /d "1" /f >nul 2>&1` block anonymous SAM accounts
 
 ### QoL stuff
 

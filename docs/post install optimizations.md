@@ -17,7 +17,7 @@ if you're planning to use Edge here's the settings I recommend
 ### Privacy, search, and services
 * Always use “Strict” tracking prevention when browsing InPrivate - on
 * Allow sites to check if you have payment methods saved - off
-* Send "Do Not Track" requests - on
+* Send "Do Not Track" requests - off
 * Allow Microsoft to save your browsing activity including history, usage, favorites, web content, and other browsing data to personalize Microsoft Edge and Microsoft services like ads, search, shopping and news - off (depends on privacy settings)
 * Microsoft Defender SmartScreen - optional. I personally turn it off
 * Save time and money with Shopping in Microsoft Edge - off

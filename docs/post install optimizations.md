@@ -44,9 +44,7 @@ in "Select which buttons to show on the toolbar:" turn everything except downloa
 
 [Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/) is heavily recommended for security and privacy. 
 
-If you want silly but good features, use [OperaGX](https://www.opera.com/computer/thanks?ni=eapgx&os=windows). (may change this)
-
-the browsers you should change *from* would be Chrome (not bad but there's better) Edge (privacy concerns) and any older browser
+the browsers you should change *from* would be Chrome (not bad but there's better) Edge (privacy concerns), OperaGX (privacy/tracking concerns) and any older browser
 
 
 ## quick optimizations
